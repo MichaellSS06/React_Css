@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background: #222;
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 56px
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem ;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap:4px
+}
+
+.info {
+    display:flex;
+    flex-direction: column;
+}
+
+.infousername {
+    opacity: .6;
+}
+
+.button {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+}
+
+.button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+.button:hover {
+    background-color: #09f;
+}
+
+.button.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.11) ;
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+}
+
+.button-stopFollow {
+    display: none;
+}
+
+.button.is-following:hover .button-stopFollow{
+    display: block;
+}
+
+.button-text {
+    display:block;
+}
+
+.button.is-following:hover .button-text {
+    display: none;
+}
