@@ -10,7 +10,7 @@ export function App () {
 
   const handleCLick = async () => {
     refreshFact()
-  }
+  } 
 
   return (
     <main>
