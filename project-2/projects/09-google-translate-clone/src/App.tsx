@@ -38,7 +38,7 @@ function App () {
         setResult(result)
       })
       .catch(() => { setResult('Error') })
-  }, [debouncedFromText, fromLanguage, toLanguage])
+  }, [debouncedFromText, fromLanguage, toLanguage]) //eslint-disable-line
 
   const handleClipboard = () => {
     navigator.clipboard.writeText(result).catch(() => {})
