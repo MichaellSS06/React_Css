@@ -34,6 +34,7 @@ function App () {
     translate({ fromLanguage, toLanguage, text: debouncedFromText })
       .then(result => {
         if (result == null) return
+        console.log(result)
         setResult(result)
       })
       .catch(() => { setResult('Error') })
