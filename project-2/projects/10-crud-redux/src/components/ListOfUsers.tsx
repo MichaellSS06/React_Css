@@ -20,7 +20,12 @@ export function ListOfUsers () {
     <Card>
       <Title>
         Usuarios
-        <Badge style={{ marginLeft: '8px' }}>{users.length}</Badge>
+        <Badge
+  color="red"
+  className="ml-2 !rounded-full !w-6 !h-6 flex items-center justify-center p-0 bg-red-500 text-white"
+>
+  {users.length}
+</Badge>
       </Title>
       <Table>
         <TableHead>

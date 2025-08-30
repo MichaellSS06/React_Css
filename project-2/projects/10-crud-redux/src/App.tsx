@@ -1,7 +1,7 @@
 import "./App.css";
 import { ListOfUsers } from "./components/ListOfUsers";
 import { CreateNewUser } from './components/CreateNewUser';
-import { Toaster } from 'sonner'
+import { Toaster } from 'sonner';
 
 function App() {
 	return (
@@ -12,5 +12,6 @@ function App() {
 		</>
 	);
 }
+
 
 export default App;
